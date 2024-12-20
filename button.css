@@ -1,0 +1,55 @@
+/* Navigation Buttons Styling */
+.navigation-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.prev-btn, .next-btn {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 30px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase; /* Makes button text all caps */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: #f1c40f; /* Yellow background on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.prev-btn:active, .next-btn:active {
+  background-color: #e0a800; /* Darker yellow when clicked */
+  transform: scale(1); /* Return to normal size when clicked */
+}
+
+.prev-btn {
+  background-color: #2980b9; /* Blue color for Previous button */
+}
+
+.next-btn {
+  background-color: #27ae60; /* Green color for Next button */
+}
+
+.prev-btn:hover {
+  background-color: #3498db; /* Light blue when hovered */
+}
+
+.next-btn:hover {
+  background-color: #2ecc71; /* Light green when hovered */
+}
+
+/* Optional: Adding arrow icons to indicate navigation direction */
+.prev-btn::before {
+  content: "← "; /* Adds left arrow before the text */
+  font-size: 20px;
+}
+
+.next-btn::after {
+  content: " →"; /* Adds right arrow after the text */
+  font-size: 20px;
+}

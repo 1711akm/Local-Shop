@@ -1,0 +1,156 @@
+/* Menu Section Styles */
+.menu-section {
+  padding: 40px;
+  margin-top: 40px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+  color: var(--red);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* menu.css or style.css */
+
+/* Menu Container Styles */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* General Menu Styling */
+.menu-item {
+  background-color: var(--gold);
+  color: var(--dark-brown);
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 10px;
+  width: 48%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative; /* Position for price visibility */
+}
+
+.menu-item:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+/* Price Visibility on Hover */
+.menu-item:hover .menu-price {
+  color: var(--gold); /* Change price text color on hover */
+}
+
+/* Styling for the Price */
+.menu-price {
+  font-size: 1.2rem;
+  color: var(--red); /* Price color before hover */
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Menu Image */
+.menu-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Menu Text */
+.menu-text {
+  font-family: 'Myanmar Text', serif;
+  font-weight: bold;
+  color: var(--dark-brown);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* Menu Container Styles */
+.menu-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the menu items */
+  gap: 20px;                /* Space between the menu items */
+  flex-wrap: wrap;          /* Allow items to wrap into the next row if needed */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* General Menu Styling */
+.menu-item {
+  background-color: var(--gold);
+  color: var(--dark-brown);
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%; /* Adjust width for side-by-side items (adjust this as needed) */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: relative; /* Position for price visibility */
+}
+
+.menu-item:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+/* Price Visibility on Hover */
+.menu-item:hover .menu-price {
+  color: var(--gold); /* Change price text color on hover */
+}
+
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;  /* Stack items vertically on small screens */
+    align-items: center;     /* Center items vertically on mobile */
+    padding: 10px;
+  }
+
+  .menu-item {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Space between each item */
+  }
+}
+
+.menu-price {
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--gold);
+  color: var(--dark-brown);
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--dark-brown);
+  color: var(--white);
+}
+
+/* Show button when scrolled down */
+.show {
+  display: block;
+}

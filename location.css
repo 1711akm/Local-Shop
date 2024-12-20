@@ -1,0 +1,13 @@
+.google-map iframe {
+  width: 100%;
+  max-width: 800px;  /* Maximum width */
+  height: 400px;     /* Set height */
+  margin: 0 auto;
+  display: block;    /* Center the iframe */
+}
+
+@media (max-width: 768px) {
+  .google-map iframe {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}

@@ -1,0 +1,58 @@
+/* Contact Us Section */
+.contact-form{
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.contact-form label{
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button{
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover{
+  background-color: #555;
+}
+
+/* Contact Info Section */
+.contact-info{
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 00 10px rbga(0, 0, 0, 0.1);
+}
+
+.contact-info h3{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-info p{
+  font-size: 16px;
+}
